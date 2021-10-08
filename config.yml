@@ -1,0 +1,51 @@
+Messages:
+  # If prefix isn't needed, leave it blank.
+  # Example: Prefix: ""
+  Prefix: " &8»&r "
+  ConsoleError: "&cOnly players can use this command!"
+  WriteNote: "&fWrite your note in a chat. Write &b&l%cancel%&f, to cancel it."
+  # This is going to be written instead of %cancel% in message above. Don't use color codes in this variable.
+  CancelVariable: "CANCEL"
+  CancelMessage: "&fYou are no longer writing a note."
+  NoteAdded: "&fYour note has been added."
+  NoteDeleted: "&fYour note has been deleted."
+  NoteRestored: "&fYour note has been restored!"
+  NoteHistoryRemove: "&fYour note has been removed from history!"
+Buttons:
+  # Item, which is used for turning a page.
+  PageTurnItem: "PAPER"
+  NextPageName: "&bNext page ->"
+  PreviousPageName: "&b<- Previous page"
+  # Item, which is used for closing a menu.
+  ClosePageItem: "SUNFLOWER"
+  ClosePageName: "&bClose menu"
+  # This item will fill empty slots.
+  FillerItem: "BLACK_STAINED_GLASS_PANE"
+  FillerName: "&r"
+GUI:
+  Title: "&b&lNOTES"
+  WriteNoteItem:
+    Item: "WRITABLE_BOOK"
+    Name: "&b&lWRITE NOTE"
+    Lore:
+      - "&fLeft-click to write a note."
+  NoteItem:
+    Item: "PAPER"
+    Name: "&b&lNOTE #%id%"
+    NoteTextColor: "&f"
+    Lore:
+      - "&bNote &8: %text%"
+  HistoryItem:
+    Item: "BARRIER"
+    Name: "&b&lDELETED NOTES"
+    Lore:
+      - "&fLeft-click to see your deleted notes."
+      - "&fThis contains &b7 &flast deleted notes!"
+HISTORY_GUI:
+  Title: "&b&lDELETED NOTES (LAST 7 NOTES)"
+  ClearHistoryItem:
+    Item: "LAVA_BUCKET"
+    Name: "&b&lCLEAR HISTORY"
+    Lore:
+      - "&fLeft-click to clear your deleted notes."
+      - "&fThis will permanently delete your history!"
